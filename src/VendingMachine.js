@@ -8,9 +8,9 @@ import {BrowserRouter, Route, Link} from 'react-router-dom'
 function VendingMachine() {
   return (
     <div>
-        <p>Go to <Link to='pies'>Pies</Link> page</p>
-        <p>Go to <Link to='steaks'>steaks</Link> page</p>
-        <p>Go to <Link to='chips'>chips</Link> page</p>
+        <p>Order some <Link to='pies'>pies!</Link></p>
+        <p>Order some <Link to='steaks'>steaks!</Link></p>
+        <p>Order some <Link to='chips'>chips!</Link></p>
 
       {/* <BrowserRouter>
 
