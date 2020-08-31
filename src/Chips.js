@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-
+/**App--> {VendingMachine --> Route/chips --> Chips} */
 function Chips(){
   return( 
     <div>

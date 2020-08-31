@@ -1,33 +1,33 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom'
-// import Pies from './Pies';
-// import Steaks from './Steaks';
-// import Chips from './Chips';
-//TODO: why do the links show up in each page?
+import { Route, Link } from 'react-router-dom'
+import Pies from './Pies';
+import Steaks from './Steaks';
+import Chips from './Chips';
 
+/**App --> VendingMachine --> Routes/pies, Routes/steaks, Routes/chips */
 function VendingMachine() {
   return (
     <div>
+      <Route exact path="/">
         <p>Order some <Link to='pies'>pies!</Link></p>
         <p>Order some <Link to='steaks'>steaks!</Link></p>
         <p>Order some <Link to='chips'>chips!</Link></p>
+      </Route>
 
-      {/* <BrowserRouter>
+      <Route exact path='/pies'>
+        <Pies />
+      </Route>
 
-        <Route exact path ='/pies'>
-          <Pies />
-        </Route>
+      <Route exact path='/steaks'>
+        <Steaks />
+      </Route>
 
-        <Route exact path ='/steaks'>
-          <Steaks />
-        </Route>
+      <Route exact path='/chips'>
+        <Chips />
+      </Route>
 
-        <Route exact path ='/chips'>
-          <Chips />
-        </Route>
-      
-      </BrowserRouter> */}
-    </div>     
+
+    </div>
   )
 }
 

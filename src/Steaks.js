@@ -1,7 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-
+/**
+ * App --> Route/steaks --> Steaks //Old design
+ * App--> {VendingMachine --> Route/steaks --> Steaks}
+ */
 function Steaks () {
   return( 
     <div>

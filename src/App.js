@@ -2,11 +2,13 @@ import React from 'react';
 import './App.css';
 import VendingMachine from './VendingMachine'
 import {BrowserRouter, Route} from 'react-router-dom'
-import Pies from './Pies';
-import Steaks from './Steaks';
-import Chips from './Chips';
+// import Pies from './Pies';
+// import Steaks from './Steaks';
+// import Chips from './Chips';
+import NavBar from './Navbar';
 
-//TODO: Shouls app be cleaner? SHould we put this routing info elsewhere
+//Note:
+//Commented out routes can be another design for App() component 
 
 
 function App() {
@@ -14,11 +16,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
 
-        <Route exact path='/'>
+        <NavBar />
+        <VendingMachine />
+        {/* <Route exact path='/'>
           <VendingMachine />
-        </Route>
+          
+        </Route> */}
 
-        <Route exact path ='/pies'>
+        {/* <Route exact path ='/pies'>
           <Pies />
         </Route>
 
@@ -28,7 +33,7 @@ function App() {
 
         <Route exact path ='/chips'>
           <Chips />
-        </Route>
+        </Route> */}
 
       </BrowserRouter>
     </div>
